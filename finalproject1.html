@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haitian Pikliz</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(252, 74, 26),
+          rgb(247, 183, 51)
+        );
+        text-align: center;
+        color: rgb(29, 26, 26);
+        font-weight: 300;
+      }
+      h1 {
+        font-size: 36px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h2 {
+        border: 1px solid rgb(196, 5, 5);
+        padding: 15px 20px;
+        border-radius: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        width: 300px;
+        border-radius: 10px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      strong {
+        font-size: 26px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        margin-top: 20px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: black;
+      }
+      button {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        background-color: transparent;
+        color: rgb(29, 26, 26);
+        padding: 15px 18px;
+        border: 1px solid rgb(29, 26, 26);
+        border-radius: 20px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: orangered;
+        cursor: pointer;
+        color: white;
+        opacity: 0.9;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+      span {
+        color: black;
+        text-transform: uppercase;
+      
+      }
+      .container {
+        max-width: 600;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      p {
+        line-height: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Haitian Pikliz 😋</h1>
+      <h2>Elevate your meal to a different level</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/107/original/e4e0a718390f7333449f54694e13cbf9.jpg?1693335697"
+      />
+      <hr />
+      <p>
+        This bright and fiery Haitian condiment (pronounced "pick-lees") is
+        traditionally served with meats and fried food to balance rich flavors.
+        <br />
+        <br />
+        <strong> Ingredients </strong>
+      </p>
+
+      <ul>
+        <li>3 Scotch bonnet peppers</li>
+        <li>1 cup shredded cabbage</li>
+        <li>½ cup shredded carrots</li>
+        <li>¼ onion , finely chopped</li>
+        <li>¼ cup peas , frozen</li>
+        <li>whole cloves</li>
+        <li>½ teaspoon salt</li>
+        <li>5 black peppercorns</li>
+        <li>cups distilled</li>
+      </ul>
+      Just marinated all the ingredients in vinegar.<br />
+      There is no Haitian cook who does not have a jar of pikliz on hand.
+
+      <a
+        href="https://www.food.com/recipe/spicy-vinegar-of-haiti-picklese-pikliz-148276"
+      >
+        <br />
+        Learn more here
+      </a>
+      <br />
+      <button class="orderbutton">👉 Order your pikliz jar</button>
+      <p class="code">
+        <em>Coded by <span>Samantha Michele</span></em>
+      </p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let question = prompt("Do you want to order a jar?");
+        if (question === "no") {
+          alert("You should try it😋 " + name + "! You'll love it😀.");
+        } else {
+          alert(
+            "Thank you for your order " +
+              name +
+              " 😃 . We'll be in touch by email"
+          );
+        }
+      }
+
+      let orderButton = document.querySelector(".orderbutton");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
